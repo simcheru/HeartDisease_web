@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>vascular health</title>
+    </head>
+    
+    <body>
+        <h1 style="text-align: center;">Check your HeartDisease</h1>
+        <form name="form" method="POST" action="http://127.0.0.1:5000/result" style="text-align: center;">
+            BMI: <input type="number" name="BMI" required/>
+            <br><br>
+            Age: <input type="number" name="AgeCategory" required/>
+            <br><br> 
+            Sleep Time: <input type="number" name="SleepTime" required/>
+            <br><br>
+            Smoking: <select name="Smoking" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            <br><br>
+            Alcohol Drinking: <select name="AlcoholDrinking" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+            </select>
+            <br><br>
+            Sex: <select name="Sex" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+            </select>
+            <br><br>
+            Physical Activity: <select name="PhysicalActivity" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            <br><br>
+            GenHealth: <select name="GenHealth" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="4">Excellent</option>
+                <option value="3">Very good</option>
+                <option value="2">Good</option>
+                <option value="1">Fair</option>
+                <option value="0">Poor</option>
+            </select>
+            <br><br>
+            Race: <select name="Race" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="White">White</option>
+                <option value="Black">Black</option>
+                <option value="Asian">Asian</option>
+                <option value="Hispanic">Hispanic</option>
+                <option value="Other">Other</option>
+            </select>
+            <br><br>
+            <button value="Submit">Run</button>
+        </form>
+        <p style="text-align: center;">{{ output }}</p>
+    </body>
+</html>
