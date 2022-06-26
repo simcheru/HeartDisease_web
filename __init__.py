@@ -59,15 +59,3 @@ def result():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-
-# import pickle
-
-# with open('model2.pkl', 'rb') as pickle_file:
-#     model = pickle.load(pickle_file)
-
-# X_test = [[20, 0, 0, 0, 77, 1, 3, 7, 0, 0, 0, 0, 1]]
-
-# y_pred = model.predict(X_test)
-
-# print(y_pred)
